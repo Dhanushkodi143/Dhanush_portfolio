@@ -163,7 +163,7 @@ const Hero = ({ theme }: { theme?: string }) => {
                         </motion.a>
 
                         <motion.a
-                            href="/resume.pdf"
+                            href="./resume.pdf"
                             download="Dhanush_Kodi_Resume.pdf"
                             className="glass"
                             whileHover={{
@@ -335,7 +335,7 @@ const Hero = ({ theme }: { theme?: string }) => {
                             position: 'relative',
                         }}>
                             <img
-                                src="/profile.jpg"
+                                src="./profile.jpg"
                                 alt="Dhanushkodi Portrait"
                                 style={{
                                     width: '100%',

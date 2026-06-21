@@ -9,21 +9,21 @@ const Projects = () => {
             desc: 'A premium, fully responsive shopping experience with a focus on high-end visual aesthetics and smooth motion.',
             tags: ['React', 'Stripe', 'Framer Motion'],
             category: 'Web App',
-            image: '/assets/projects/ecommerce.png'
+            image: './assets/projects/ecommerce.png'
         },
         {
             title: 'Analytics Dashboard',
             desc: 'Modern data visualization dashboard for tracking real-time metrics with custom interactive charts.',
             tags: ['D3.js', 'Next.js', 'Tailwind'],
             category: 'FinTech',
-            image: '/assets/projects/analytics.png'
+            image: './assets/projects/analytics.png'
         },
         {
             title: 'Creative Agency Site',
             desc: 'Award-winning portfolio concept for a global creative agency featuring advanced CSS animations.',
             tags: ['Three.js', 'GSAP', 'Vite'],
             category: 'Creative',
-            image: '/assets/projects/creative.png'
+            image: './assets/projects/creative.png'
         }
     ];
 
