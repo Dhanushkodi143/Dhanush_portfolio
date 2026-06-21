@@ -21,14 +21,21 @@ const Contact = () => {
 
         setStatus('submitting');
 
-        // Web3Forms native background submission using FormData
-        const formPayload = new FormData(e.target);
-        formPayload.append("access_key", "613927ad-4175-4f37-91f1-a0fbd36f003c");
+        const payload = {
+            access_key: "613927ad-4175-4f37-91f1-a0fbd36f003c",
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+        };
 
         try {
             const res = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                body: formPayload
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: JSON.stringify(payload)
             });
             const data = await res.json();
 
