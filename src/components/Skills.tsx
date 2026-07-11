@@ -77,7 +77,7 @@ const Skills = () => {
     };
 
     return (
-        <section id="skills" style={{ margin: '6rem 0', padding: '2rem 0' }}>
+        <section id="skills" style={{ padding: '2rem 0' }}>
             <div className="container" style={{ maxWidth: '1200px' }}>
                 <SectionHeading title="Technical Skills" subtitle="my toolkit" />
 

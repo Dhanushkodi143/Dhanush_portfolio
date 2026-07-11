@@ -5,8 +5,8 @@ import SectionHeading from './SectionHeading';
 
 const Experience = () => {
     return (
-        <section id="experience" style={{ padding: '8rem 0', background: 'transparent' }}>
-            <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 1rem' }}>
+        <section id="experience" style={{ padding: '2rem 0', background: 'transparent' }}>
+            <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                 <SectionHeading title="Experience" subtitle="my journey" />
 
                 {/* Bento Grid Layout */}
@@ -92,7 +92,7 @@ const Experience = () => {
                                 fontWeight: 700, 
                                 marginBottom: '1.5rem' 
                             }}>
-                                2024 – Present
+                                2024 – 2026
                             </div>
                             
                             {/* Tags */}

@@ -40,7 +40,7 @@ const Hero = ({ theme }: { theme?: string }) => {
             justifyContent: 'center',
             textAlign: 'left', // Aligned left matching the screenshot
             paddingTop: '6rem',
-            paddingBottom: '4rem'
+            paddingBottom: '0'
         }}>
             <motion.div
                 className="container hero-container"
@@ -50,12 +50,12 @@ const Hero = ({ theme }: { theme?: string }) => {
                 viewport={{ once: true }}
                 style={{
                     display: 'flex',
-                    alignItems: 'center',
+                    alignItems: 'stretch',
                     gap: '3rem',
                     justifyContent: 'space-between'
                 }}
             >
-                <div className="hero-text-content" style={{ flex: '1 1 0%', minWidth: '300px', paddingLeft: 'clamp(1rem, 3vw, 2rem)' }}>
+                <div className="hero-text-content" style={{ flex: '1 1 0%', minWidth: '300px' }}>
 
                     <motion.h1
                         variants={itemVariants}
@@ -243,20 +243,19 @@ const Hero = ({ theme }: { theme?: string }) => {
                 <motion.div
                     variants={itemVariants}
                     className="hero-image-wrapper"
-                    style={{ flex: '0 0 auto', width: '100%', maxWidth: '380px' }}
+                    style={{ flex: '0 0 auto', width: '100%', maxWidth: '340px', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}
                 >
                     <div style={{
                         position: 'relative',
                         width: '100%',
-                        maxWidth: '400px',
+                        maxWidth: '300px',
                         aspectRatio: '1/1',
                         borderRadius: '2rem',
                         padding: '6px', // Space for the glowing border
-                        background: 'linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box, linear-gradient(135deg, var(--accent-color), #8b5cf6, #ec4899) border-box',
-                        border: '2px solid transparent',
-                        animation: 'float 6s ease-in-out infinite, gradient-shift 10s ease infinite',
-                        backgroundSize: '200% 200%',
-                        boxShadow: '0 20px 50px rgba(0,0,0,0.5), inset 0 0 20px rgba(255,255,255,0.05)',
+                        background: 'var(--bg-primary)',
+                        border: '2px solid var(--accent-color)',
+                        boxShadow: '0 0 20px rgba(45, 212, 191, 0.4), inset 0 0 20px rgba(45, 212, 191, 0.1)',
+                        margin: '0 auto'
                     }}>
                         {/* Inner container to hold image and ensure border-radius matches */}
                         <div style={{
@@ -273,10 +272,17 @@ const Hero = ({ theme }: { theme?: string }) => {
                                     width: '100%',
                                     height: '100%',
                                     objectFit: 'cover',
-                                    transition: 'transform 0.5s ease',
+                                    transition: 'all 0.5s ease',
+                                    filter: 'grayscale(0%)'
                                 }}
-                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
-                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                                onMouseEnter={e => {
+                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                    e.currentTarget.style.filter = 'grayscale(100%)';
+                                }}
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                    e.currentTarget.style.filter = 'grayscale(0%)';
+                                }}
                             />
                             {/* Overlay gradient for premium feel */}
                             <div style={{
@@ -288,14 +294,87 @@ const Hero = ({ theme }: { theme?: string }) => {
                             }}></div>
                         </div>
                     </div>
+
+                    {/* Floating Code Snippet */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20, y: 20 }}
+                        animate={{ opacity: 1, x: 0, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.6 }}
+                        style={{
+                            position: 'relative',
+                            background: '#0d1117', // GitHub Dark like background
+                            borderRadius: '12px',
+                            padding: '1.2rem',
+                            boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
+                            border: '1px solid rgba(255,255,255,0.05)',
+                            zIndex: 10,
+                            width: '100%',
+                            maxWidth: '300px',
+                            fontSize: '0.85rem',
+                            fontFamily: "'Fira Code', 'Courier New', monospace",
+                            textAlign: 'left',
+                            backdropFilter: 'blur(10px)',
+                            margin: '0 auto'
+                        }}
+                        className="floating-code-snippet"
+                    >
+                        {/* macOS dots */}
+                        <div style={{ display: 'flex', gap: '8px', marginBottom: '14px', alignItems: 'center' }}>
+                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#ff5f56' }} />
+                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#ffbd2e' }} />
+                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#27c93f' }} />
+                            <span style={{ marginLeft: '10px', color: '#8b949e', fontSize: '0.75rem', fontFamily: 'var(--font-main)', fontWeight: 600 }}>PortfolioController.java</span>
+                        </div>
+                        {/* Code */}
+                        <motion.div 
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={{
+                                visible: {
+                                    transition: {
+                                        staggerChildren: 0.15,
+                                        delayChildren: 0.8,
+                                    }
+                                }
+                            }}
+                            style={{ color: '#c9d1d9', lineHeight: 1.6 }}
+                        >
+                            {[
+                                <div><span style={{ color: '#d2a8ff' }}>@RestController</span></div>,
+                                <div><span style={{ color: '#ff7b72' }}>public class</span> <span style={{ color: '#79c0ff' }}>Portfolio</span> {'{'}</div>,
+                                <div style={{ paddingLeft: '1.5rem' }}><span style={{ color: '#ff7b72' }}>String</span> name = <span style={{ color: '#a5d6ff' }}>"Dhanush kodi.P"</span>;</div>,
+                                <div style={{ paddingLeft: '1.5rem' }}><span style={{ color: '#ff7b72' }}>double</span> year = <span style={{ color: '#79c0ff' }}>4.2</span>;</div>,
+                                <div style={{ paddingLeft: '1.5rem' }}><span style={{ color: '#ff7b72' }}>String</span>[] stack = {'{'}</div>,
+                                <div style={{ paddingLeft: '3rem', color: '#a5d6ff' }}>"Java", "React.js", "Spring Boot", "Microservices"</div>,
+                                <div style={{ paddingLeft: '1.5rem' }}>{'}'};</div>,
+                                <div>{'}'}</div>
+                            ].map((line, i) => (
+                                <motion.div 
+                                    key={i} 
+                                    variants={{
+                                        hidden: { opacity: 0, x: -10 },
+                                        visible: { opacity: 1, x: 0 }
+                                    }}
+                                >
+                                    {line}
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </motion.div>
                 </motion.div>
 
                 <style>{`
                     @media (max-width: 900px) {
                         .hero-container {
                             flex-direction: column-reverse !important;
+                            align-items: center !important;
                             text-align: center !important;
-                            gap: 4rem !important;
+                            gap: 8rem !important;
+                            padding-top: 0 !important;
+                        }
+                        .hero-image-wrapper {
+                            margin-top: 0 !important;
                         }
                         .hero-text-content {
                             padding-left: 0 !important;
@@ -313,6 +392,14 @@ const Hero = ({ theme }: { theme?: string }) => {
                         }
                         .hero-socials {
                             justify-content: center !important;
+                        }
+                        .floating-code-snippet {
+                            position: relative !important;
+                            left: auto !important;
+                            transform: none !important;
+                            bottom: auto !important;
+                            width: 100% !important;
+                            max-width: 300px !important;
                         }
                     }
 

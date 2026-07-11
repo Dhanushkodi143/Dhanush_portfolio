@@ -104,7 +104,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" style={{ padding: '8rem 0', position: 'relative', overflow: 'hidden', background: 'var(--bg-primary)', transition: 'background-color 0.3s ease' }}>
+        <section id="contact" style={{ padding: '2rem 0', position: 'relative', overflow: 'hidden', background: 'var(--bg-primary)', transition: 'background-color 0.3s ease' }}>
             <div className="contact-blob-1"></div>
             <div className="contact-blob-2"></div>
 
