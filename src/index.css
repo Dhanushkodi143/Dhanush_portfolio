@@ -885,9 +885,11 @@ section {
         text-align: center;
         justify-content: center;
     }
+
     .hero-buttons {
         justify-content: center;
     }
+
     .hero-socials {
         margin-top: 2.5rem;
         justify-content: center;

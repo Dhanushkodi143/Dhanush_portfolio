@@ -18,9 +18,6 @@ const Hero = ({ theme }: { theme?: string }) => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
     };
 
-    const name = "DHANUSHKODI";
-    const heading = "Turning Ideas into Powerful Web Applications";
-
     const textVariants = {
         hidden: { opacity: 1 },
         visible: {
@@ -41,8 +38,9 @@ const Hero = ({ theme }: { theme?: string }) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            textAlign: 'center',
-            paddingTop: '4rem'
+            textAlign: 'left', // Aligned left matching the screenshot
+            paddingTop: '6rem',
+            paddingBottom: '4rem'
         }}>
             <motion.div
                 className="container hero-container"
@@ -50,63 +48,53 @@ const Hero = ({ theme }: { theme?: string }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '3rem',
+                    justifyContent: 'space-between'
+                }}
             >
-                <div className="hero-text-content">
+                <div className="hero-text-content" style={{ flex: '1 1 0%', minWidth: '300px', paddingLeft: 'clamp(1rem, 3vw, 2rem)' }}>
 
                     <motion.h1
-                        variants={textVariants}
+                        variants={itemVariants}
                         style={{
-                            fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                            lineHeight: 1.2,
-                            marginBottom: '1.5rem',
+                            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+                            lineHeight: 1.1,
+                            marginBottom: '0.5rem',
                             fontFamily: "'Montserrat', sans-serif",
-                            fontWeight: 900
+                            fontWeight: 900,
+                            textTransform: 'uppercase',
+                            color: 'var(--text-primary)'
                         }}
                     >
-                        {heading.split(" ").map((word, wordIndex, array) => (
-                            <React.Fragment key={wordIndex}>
-                                <span style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
-                                    {word.split("").map((char, charIndex) => (
-                                        <motion.span
-                                            key={`char-${wordIndex}-${charIndex}`}
-                                            variants={charVariants}
-                                            className={word === "Ideas" || word === "Web" ? "gradient-text" : ""}
-                                            style={{ display: 'inline-block' }}
-                                        >
-                                            {char}
-                                        </motion.span>
-                                    ))}
-                                </span>
-                                {wordIndex < array.length - 1 && (
-                                    <motion.span
-                                        key={`space-${wordIndex}`}
-                                        variants={charVariants}
-                                        style={{ display: 'inline-block', whiteSpace: 'pre' }}
-                                    >
-                                        {" "}
-                                    </motion.span>
-                                )}
-                            </React.Fragment>
-                        ))}
+                        DHANUSH KODI PALANISAMY
                     </motion.h1>
+
+                    <motion.h2
+                        variants={itemVariants}
+                        style={{
+                            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+                            color: '#00bcd4',
+                            marginBottom: '1.5rem',
+                            fontWeight: 600,
+                            fontFamily: "'Montserrat', sans-serif",
+                        }}
+                    >
+                        Senior Fullstack Developer
+                    </motion.h2>
 
                     <motion.div variants={itemVariants}>
                         <p style={{
-                            fontSize: 'clamp(1.1rem, 2vw, 1.4rem)',
+                            fontSize: 'clamp(1rem, 1.5vw, 1.1rem)',
                             color: 'var(--text-secondary)',
-                            marginBottom: '3rem',
-                            fontWeight: 500
+                            marginBottom: '2.5rem',
+                            fontWeight: 400,
+                            lineHeight: 1.7,
+                            maxWidth: '700px'
                         }}>
-                            Hi, I'm{" "}
-                            <motion.span
-                                variants={textVariants}
-                                style={{ color: 'var(--text-primary)', fontWeight: 800 }}
-                            >
-                                {name.split("").map((char, index) => (
-                                    <motion.span key={index} variants={charVariants}>{char}</motion.span>
-                                ))}
-                            </motion.span>
-                            . A creative developer focused on building high-end, visual, and user-centric web applications.
+                            Senior Full-Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications in the Banking and FinTech domain. Proficient in Java, Spring Boot, React, and cloud-native integration technologies including AWS S3, Azure Event Hub, Apache Kafka, and ActiveMQ. Experienced in building end-to-end transport-layer integrations, mentoring development teams, and driving UI architecture using Nx Monorepo. Strong background in Agile methodologies, reusable component design, and workflow-driven banking platforms.
                         </p>
                     </motion.div>
 
@@ -306,6 +294,7 @@ const Hero = ({ theme }: { theme?: string }) => {
                 <motion.div
                     variants={itemVariants}
                     className="hero-image-wrapper"
+                    style={{ flex: '0 0 auto', width: '100%', maxWidth: '380px' }}
                 >
                     <div style={{
                         position: 'relative',
@@ -330,7 +319,7 @@ const Hero = ({ theme }: { theme?: string }) => {
                         }}>
                             <img
                                 src="./profile.jpg"
-                                alt="Dhanushkodi Portrait"
+                                alt="Dhanush Kodi Palanisamy Portrait"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -353,6 +342,31 @@ const Hero = ({ theme }: { theme?: string }) => {
                 </motion.div>
 
                 <style>{`
+                    @media (max-width: 900px) {
+                        .hero-container {
+                            flex-direction: column-reverse !important;
+                            text-align: center !important;
+                            gap: 4rem !important;
+                        }
+                        .hero-text-content {
+                            padding-left: 0 !important;
+                            text-align: center !important;
+                        }
+                        .hero-text-content h1, 
+                        .hero-text-content h2, 
+                        .hero-text-content p {
+                            text-align: center !important;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .hero-buttons {
+                            justify-content: center !important;
+                        }
+                        .hero-socials {
+                            justify-content: center !important;
+                        }
+                    }
+
                     @keyframes float {
                         0% { transform: translateY(0px); }
                         50% { transform: translateY(-15px); }

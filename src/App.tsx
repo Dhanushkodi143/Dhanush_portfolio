@@ -38,7 +38,7 @@ function App() {
             </main>
             <footer className="footer-to-hide" style={{ padding: '4rem 0', textAlign: 'center', color: 'var(--text-muted)' }}>
                 <p style={{ fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', fontSize: '0.8rem' }}>
-                    &copy; {new Date().getFullYear()} Dhanushkodi. Made with React & Passion.
+                    &copy; {new Date().getFullYear()} Dhanush Kodi Palanisamy. Made with React & Passion.
                 </p>
             </footer>
         </div>
