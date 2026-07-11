@@ -28,7 +28,7 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects">
+        <section id="projects" style={{ padding: '0', margin: '0' }}>
             <div className="container">
                 <SectionHeading title="Featured Work" subtitle="portfolio" />
 

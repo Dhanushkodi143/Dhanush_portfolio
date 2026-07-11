@@ -76,7 +76,7 @@ const hobbiesData = [
 
 const Hobbies = () => {
     return (
-        <section id="hobbies" className="section" style={{ padding: '2rem 0', position: 'relative' }}>
+        <section id="hobbies" className="section" style={{ padding: '0', margin: '0', position: 'relative' }}>
             <div className="container hobbies-bento-container" style={{ position: 'relative', zIndex: 10 }}>
                 <SectionHeading title="Passions & Interests" subtitle="hobbies" />
 
