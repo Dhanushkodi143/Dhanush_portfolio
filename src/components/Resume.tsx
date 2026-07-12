@@ -2,31 +2,59 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const resumeData = {
-    name: "DHANUSH KODI",
-    title: "Fullstack Developer",
-    contact: "Tamil Nadu | kodidhanush1402@gmail.com | +91 9043580186",
-    objective: "Fullstack Developer with over 2.5 years of industry experience, I bring a proven track record of designing and implementing visually stunning and highly functional user interfaces. Proficient in HTML, CSS, SQL, and JavaScript, React js*, Spring boot. My expertise extends to working with React's popular front-end framework, enabling me to create scalable and maintainable code.",
+    name: "DHANUSH KODI PALANISAMY",
+    title: "Senior Full-Stack Developer",
+    contact: "Chennai, Tamil Nadu | kodidhanush1402@gmail.com | +91 9566365706",
+    objective: "Senior Full-Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications in the Banking and FinTech domain. Proficient in Java, Spring Boot, React, and cloud-native integration technologies including AWS S3, Azure Event Hub, Apache Kafka, and ActiveMQ. Experienced in building end-to-end transport-layer integrations, mentoring development teams, and driving UI architecture using Nx Monorepo. Strong background in Agile methodologies, reusable component design, CI/CD pipelines, and workflow-driven banking platforms.",
     experience: [
+        {
+            title: "Consultant – Product Engineer",
+            company: "Intellect Design Arena",
+            location: "Chennai, India",
+            project: "iTurmeric / Enterprise Integrations",
+            period: "Jun 2025 - Present",
+            details: [
+                "Architected and owned end-to-end backend integration endpoints using Java and Spring Boot across AWS S3, Azure Event Hub, Apache Kafka, SFTP, IBM MQ, and ActiveMQ — processing high-throughput financial data pipelines with zero downtime across 3+ production environments.",
+                "Led the development of a reusable React component library with built-in event-handling abstractions, reducing boilerplate code by ~40% and cutting UI feature delivery time across cross-functional teams.",
+                "Drove full-stack feature delivery on the iTurmeric enterprise banking platform, owning REST API design and transport-layer integration from requirement to production release.",
+                "Mentored 3 junior developers on Spring Boot microservices architecture and React component design best practices, improving code review pass rates and reducing rework cycles.",
+                "Collaborated with cross-functional Agile teams to deliver features meeting enterprise banking quality standards, consistently meeting sprint commitments across quarterly release cycles."
+            ]
+        },
+        {
+            title: "Associate Consultant – Product Engineer",
+            company: "Intellect Design Arena",
+            location: "Chennai, India",
+            project: "Banking Workflows",
+            period: "Jun 2024 - Jun 2025",
+            details: [
+                "Implemented transport-layer connectivity using Spring Boot integrating AWS S3, Azure Service Bus, Apache Kafka, SFTP, FTP, IBM MQ, and ActiveMQ — enabling reliable enterprise banking workflows across distributed systems.",
+                "Delivered scalable backend REST APIs and frontend React components, contributing to a 25% reduction in API response latency through optimized data handling and connection pooling.",
+                "Enhanced the banking UI using React and Bootstrap, building event-driven components that streamlined 5+ critical user workflows and improved task completion rates for banking operations teams.",
+                "Maintained code quality through structured peer reviews, unit testing, and documentation — achieving consistent adherence to enterprise development standards across all delivered modules."
+            ]
+        },
         {
             title: "Associate Software Developer",
             company: "Techriffs Info Systems",
             location: "Chennai, India",
-            project: "UPPLABS (Banking Domain)",
-            period: "2022 - Present",
+            project: "Full-Stack Banking Solution",
+            period: "Nov 2022 - Jun 2024",
             details: [
-                "Developed banking solutions including account creation, transactions, and loan management.",
-                "Optimized UI performance using lazy loading and code splitting in React.",
-                "Built responsive dashboards with real-time data visualization.",
-                "Collaborated with cross-functional teams using Agile/Scrum methodologies."
+                "Built a comprehensive full-stack banking solution covering 8 modules: Account Creation, Customer Information Management, Transaction Processing, Loan Management, Accounting & Finance, Risk Management, Online Banking, and CRM — delivered on schedule across all milestones.",
+                "Developed backend REST APIs using Java and Spring Boot, implementing business logic for loan processing, transaction management, and financial accounting modules used by 200+ concurrent users, backed by SQL/MySQL data models.",
+                "Designed and implemented a role-based access control (RBAC) system supporting Customer, Admin, and Manager profiles with dynamic, configurable permission management — reducing unauthorized access incidents to zero post-launch.",
+                "Built responsive frontend interfaces using React and Bootstrap, achieving consistent cross-browser compatibility and reducing UI-related support tickets by 30% post-deployment.",
+                "Translated business requirements into technical solutions end-to-end, collaborating with stakeholders to deliver all modules within agreed timelines and scope."
             ]
         }
     ],
     skills: {
-        frontend: ["React JS", "JavaScript (ES6+)", "HTML5", "CSS3", "Bootstrap"],
-        backend: ["Node.js", "Spring Boot", "REST APIs", "MySQL", "Hibernate"],
-        tools: ["Git", "GitHub", "JIRA", "Agile/Scrum"]
+        frontend: ["React.js", "Bootstrap", "HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+        backend: ["Java", "Core Java", "Spring Boot", "Node.js", "REST APIs", "Microservices", "SQL/MySQL"],
+        tools: ["Nx Monorepo", "Git", "Agile/Scrum", "Jenkins", "Docker", "Kafka", "ActiveMQ"]
     },
-    education: "B.E. Computer Science | Velalar College of Engineering (2018-2022)"
+    education: "Bachelor of Engineering – Mechanical Engineering | Velalar College of Engineering (May 2022)"
 };
 
 const RibbonHeader = ({ text, color, darkColor, lightColor }) => (

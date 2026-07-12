@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Importing official icons from react-icons
-import { FaJava, FaNodeJs, FaReact, FaBootstrap, FaHtml5, FaCss3Alt, FaJs, FaAws, FaExchangeAlt, FaCloudUploadAlt, FaServer, FaGitAlt, FaGithub, FaGitlab, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import { FaJava, FaNodeJs, FaReact, FaBootstrap, FaHtml5, FaCss3Alt, FaJs, FaAws, FaExchangeAlt, FaCloudUploadAlt, FaServer, FaGitAlt, FaGithub, FaGitlab, FaProjectDiagram, FaEnvelope, FaDatabase, FaDocker, FaCogs } from 'react-icons/fa';
 import { SiSpringboot, SiTypescript, SiApachekafka, SiRabbitmq, SiNx } from 'react-icons/si';
 import { VscServerProcess, VscAzure } from 'react-icons/vsc';
 import { TbApi } from 'react-icons/tb';
@@ -30,6 +30,23 @@ const Skills = () => {
                 { name: 'Node.js', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#339933', tags: ['Express', 'Event Loop'], icon: <FaNodeJs size={32} color="#339933" /> },
                 { name: 'REST API', experience: '4 yrs experience', level: 'Expert', progress: 95, color: '#FF5733', tags: ['Design', 'Security', 'Integration'], icon: <TbApi size={32} color="#FF5733" /> },
                 { name: 'Microservices', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#00ADD8', tags: ['Architecture', 'Scaling'], icon: <VscServerProcess size={32} color="#00ADD8" /> }
+            ]
+        },
+        {
+            title: "Databases",
+            skills: [
+                { name: 'SQL', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#00758F', tags: ['Queries', 'Optimization'], icon: <FaDatabase size={30} color="#00758F" /> },
+                { name: 'MySQL', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#00758F', tags: ['Relational', 'Design'], icon: <FaDatabase size={30} color="#00758F" /> },
+                { name: 'PL/SQL', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#F80000', tags: ['Procedures', 'Triggers'], icon: <FaDatabase size={30} color="#F80000" /> }
+            ]
+        },
+        {
+            title: "CI/CD & DevOps",
+            skills: [
+                { name: 'Jenkins', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#D33833', tags: ['Pipelines', 'Automation'], icon: <FaCogs size={30} color="#D33833" /> },
+                { name: 'GitHub Actions', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#2088FF', tags: ['Workflows', 'CI'], icon: <FaGithub size={32} color="#2088FF" /> },
+                { name: 'Docker', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#2496ED', tags: ['Containers', 'Images'], icon: <FaDocker size={32} color="#2496ED" /> },
+                { name: 'Maven', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#C71A22', tags: ['Build', 'Dependencies'], icon: <FaCogs size={30} color="#C71A22" /> }
             ]
         },
         {

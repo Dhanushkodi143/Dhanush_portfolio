@@ -94,7 +94,7 @@ const Hero = ({ theme }: { theme?: string }) => {
                             lineHeight: 1.7,
                             maxWidth: '700px'
                         }}>
-                            Senior Full-Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications in the Banking and FinTech domain. Proficient in Java, Spring Boot, React, and cloud-native integration technologies including AWS S3, Azure Event Hub, Apache Kafka, and ActiveMQ. Experienced in building end-to-end transport-layer integrations, mentoring development teams, and driving UI architecture using Nx Monorepo. Strong background in Agile methodologies, reusable component design, and workflow-driven banking platforms.
+                            Senior Full-Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications in the Banking and FinTech domain. Proficient in <span style={{ color: '#ffb347', fontWeight: 600 }}>Java</span>, <span style={{ color: '#84cc16', fontWeight: 600 }}>Spring Boot</span>, <span style={{ color: '#22d3ee', fontWeight: 600 }}>React</span>, and <span style={{ color: '#c084fc', fontWeight: 600 }}>cloud-native</span> integration technologies including <span style={{ color: '#f59e0b', fontWeight: 600 }}>AWS S3</span>, <span style={{ color: '#3b82f6', fontWeight: 600 }}>Azure Event Hub</span>, <span style={{ color: '#f43f5e', fontWeight: 600 }}>Apache Kafka</span>, and <span style={{ color: '#fb7185', fontWeight: 600 }}>ActiveMQ</span>. Experienced in building end-to-end transport-layer integrations, mentoring development teams, and driving UI architecture using <span style={{ color: '#a78bfa', fontWeight: 600 }}>Nx Monorepo</span>. Strong background in Agile methodologies, reusable component design, CI/CD pipelines, and workflow-driven banking platforms.
                         </p>
                     </motion.div>
 
@@ -207,7 +207,7 @@ const Hero = ({ theme }: { theme?: string }) => {
 
                         {/* Download Resume Button */}
                         <motion.a
-                            href="./resume.pdf"
+                            href="./Dhanush_Kodi_Resume_Updated.pdf"
                             download="Dhanush_Kodi_Resume.pdf"
                             whileHover={{
                                 scale: 1.05,

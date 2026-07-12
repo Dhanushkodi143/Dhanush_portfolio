@@ -65,7 +65,7 @@ const Experience = () => {
                                 textTransform: 'uppercase', 
                                 margin: '0 0 0.5rem 0' 
                             }}>
-                                Intellect Design Arena Pvt Ltd
+                                Intellect Design Arena
                             </p>
                             
                             <h3 style={{ 
@@ -74,7 +74,7 @@ const Experience = () => {
                                 fontWeight: 800, 
                                 margin: '0 0 1rem 0' 
                             }}>
-                                Fullstack Developer
+                                Consultant – Product Engineer
                             </h3>
                             
                             <p style={{ 
@@ -83,7 +83,7 @@ const Experience = () => {
                                 lineHeight: 1.6, 
                                 margin: '0 0 1.5rem 0' 
                             }}>
-                                Developer of iTurmeric — a cloud-native, low-code, API-first integration platform for the BFSI sector. Handles payment processing, loan origination, and mobile banking services.
+                                Architected end-to-end backend integration endpoints using Java and Spring Boot across AWS S3, Azure Event Hub, Kafka, and ActiveMQ. Led development of reusable React components, and drove full-stack feature delivery on the iTurmeric platform.
                             </p>
                             
                             <div style={{ 
@@ -92,7 +92,7 @@ const Experience = () => {
                                 fontWeight: 700, 
                                 marginBottom: '1.5rem' 
                             }}>
-                                2024 – 2026
+                                Jun 2025 – Present
                             </div>
                             
                             {/* Tags */}
@@ -204,23 +204,23 @@ const Experience = () => {
                                 </div>
 
                                 <p style={{ color: '#38bdf8', fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', margin: '0 0 0.5rem 0' }}>
-                                    Cognizant (CTS)
+                                    Intellect Design Arena
                                 </p>
                                 
                                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.8rem', fontWeight: 800, margin: '0 0 1rem 0' }}>
-                                    Internship
+                                    Associate Consultant – Product Engineer
                                 </h3>
                                 
                                 <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.6, margin: '0 0 1.5rem 0', flex: 1 }}>
-                                    Pixel-perfect UI development with UI/UX designers using React and modern CSS animations.
+                                    Implemented transport-layer connectivity using Spring Boot, integrating AWS S3, Kafka, and Azure Service Bus. Delivered scalable backend APIs and event-driven React components.
                                 </p>
                                 
                                 <div style={{ color: '#38bdf8', fontSize: '1.1rem', fontWeight: 700, marginBottom: '1.5rem' }}>
-                                    2022 · 6 months
+                                    Jun 2024 – Jun 2025
                                 </div>
                                 
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
-                                    {['React', 'CSS', 'Figma'].map(tag => (
+                                    {['Spring Boot', 'React', 'Kafka', 'REST APIs'].map(tag => (
                                         <span key={tag} style={{
                                             background: 'var(--bg-primary)', color: 'var(--text-secondary)', padding: '6px 14px',
                                             borderRadius: '20px', fontSize: '0.85rem', fontWeight: 600,
@@ -272,23 +272,23 @@ const Experience = () => {
                                 </div>
 
                                 <p style={{ color: '#fb923c', fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', margin: '0 0 0.5rem 0' }}>
-                                    Tech Reffis.
+                                    Techriffs Info Systems
                                 </p>
                                 
                                 <h3 style={{ color: 'var(--text-primary)', fontSize: '1.8rem', fontWeight: 800, margin: '0 0 1rem 0' }}>
-                                    Fullstack Developer
+                                    Associate Software Developer
                                 </h3>
                                 
                                 <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: 1.6, margin: '0 0 1.5rem 0', flex: 1 }}>
-                                    High-traffic web application development with fullstack ownership — React frontend + Node.js backend.
+                                    Built a comprehensive full-stack banking solution covering 8 modules. Developed backend REST APIs using Java & Spring Boot, backed by MySQL. Designed RBAC systems.
                                 </p>
                                 
                                 <div style={{ color: '#fb923c', fontSize: '1.1rem', fontWeight: 700, marginBottom: '1.5rem' }}>
-                                    2022–2024 · 2 yrs
+                                    Nov 2022 – Jun 2024
                                 </div>
                                 
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
-                                    {['React', 'Node.js', 'MongoDB'].map(tag => (
+                                    {['Java', 'Spring Boot', 'React', 'MySQL', 'RBAC'].map(tag => (
                                         <span key={tag} style={{
                                             background: 'var(--bg-primary)', color: 'var(--text-secondary)', padding: '6px 14px',
                                             borderRadius: '20px', fontSize: '0.85rem', fontWeight: 600,
