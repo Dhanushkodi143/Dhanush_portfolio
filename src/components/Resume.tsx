@@ -51,7 +51,7 @@ const resumeData = {
     ],
     skills: {
         frontend: ["React.js", "Bootstrap", "HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
-        backend: ["Java", "Core Java", "Spring Boot", "Node.js", "REST APIs", "Microservices", "SQL/MySQL"],
+        backend: ["Java", "Core Java", "Spring Boot", "Node.js", "REST APIs", "Microservices", "SQL/MySQL", "PostgreSQL"],
         tools: ["Nx Monorepo", "Git", "Agile/Scrum", "Jenkins", "Docker", "Kafka", "ActiveMQ"]
     },
     education: "Bachelor of Engineering – Mechanical Engineering | Velalar College of Engineering (May 2022)"

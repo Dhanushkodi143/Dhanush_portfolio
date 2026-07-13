@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 // Importing official icons from react-icons
 import { FaJava, FaNodeJs, FaReact, FaBootstrap, FaHtml5, FaCss3Alt, FaJs, FaAws, FaExchangeAlt, FaCloudUploadAlt, FaServer, FaGitAlt, FaGithub, FaGitlab, FaProjectDiagram, FaEnvelope, FaDatabase, FaDocker, FaCogs } from 'react-icons/fa';
-import { SiSpringboot, SiTypescript, SiApachekafka, SiRabbitmq, SiNx } from 'react-icons/si';
+import { SiSpringboot, SiTypescript, SiApachekafka, SiRabbitmq, SiNx, SiPostgresql } from 'react-icons/si';
 import { VscServerProcess, VscAzure } from 'react-icons/vsc';
 import { TbApi } from 'react-icons/tb';
 import SectionHeading from './SectionHeading';
@@ -37,6 +37,7 @@ const Skills = () => {
             skills: [
                 { name: 'SQL', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#00758F', tags: ['Queries', 'Optimization'], icon: <FaDatabase size={30} color="#00758F" /> },
                 { name: 'MySQL', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#00758F', tags: ['Relational', 'Design'], icon: <FaDatabase size={30} color="#00758F" /> },
+                { name: 'PostgreSQL', experience: '4 yrs experience', level: 'Advanced', progress: 85, color: '#336791', tags: ['Relational', 'JSONB'], icon: <SiPostgresql size={30} color="#336791" /> },
                 { name: 'PL/SQL', experience: '4 yrs experience', level: 'Advanced', progress: 80, color: '#F80000', tags: ['Procedures', 'Triggers'], icon: <FaDatabase size={30} color="#F80000" /> }
             ]
         },
