@@ -39,7 +39,7 @@ const resumeData = {
             company: "Techriffs Info Systems",
             location: "Chennai, India",
             project: "Full-Stack Banking Solution",
-            period: "Nov 2022 - Jun 2024",
+            period: "Jun 2022 - Jun 2024",
             details: [
                 "Built a comprehensive full-stack banking solution covering 8 modules: Account Creation, Customer Information Management, Transaction Processing, Loan Management, Accounting & Finance, Risk Management, Online Banking, and CRM — delivered on schedule across all milestones.",
                 "Developed backend REST APIs using Java and Spring Boot, implementing business logic for loan processing, transaction management, and financial accounting modules used by 200+ concurrent users, backed by SQL/MySQL data models.",

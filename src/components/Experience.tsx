@@ -284,7 +284,7 @@ const Experience = () => {
                                 </p>
                                 
                                 <div style={{ color: '#fb923c', fontSize: '1.1rem', fontWeight: 700, marginBottom: '1.5rem' }}>
-                                    Nov 2022 – Jun 2024
+                                    Jun 2022 – Jun 2024
                                 </div>
                                 
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
